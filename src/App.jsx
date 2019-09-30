@@ -14,6 +14,7 @@ const PageContainer = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   display flex;
+  align-items: center;
   flex-direction: column;
   margin: 0;
   `
@@ -28,21 +29,27 @@ const Img = styled.img`
 
 const HotelName = styled.h1`
   color: white;
-  margin: 0px 40px;
+  margin: 0px;
   padding: 0;
   font-size 36px;
 `
 
+const HotelIDContainer = styled.div`
+width:85%;
+padding: 0;
+margin: 0;
+`
+
 const Address = styled.p`
   color: #a0bed9;
-  margin: 3px 40px;
+  margin: 3px 0px;
   padding: 0;
   font-size: 30px;
 `
 
 const Phone = styled.p`
   color: white;
-  margin: 5px 40px;
+  margin: 5px 0px;
   padding: 0;
   font-size: 30px;
   text-decoration: underline;
@@ -52,9 +59,11 @@ const Phone = styled.p`
 
 const Footer = styled.footer`
   background: black;
-  height: 70px;
+  height: 50px;
   color: white;
-  text-align: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 `
 
 const App = () => {
@@ -65,10 +74,12 @@ const App = () => {
       <PageContainer>
         <NavHeader />
         <Img alt="" src={hiltonChicago} />
-        <HotelName>Hilton Chicago</HotelName>
-        <Address>720 South Michigan Avenue</Address>
-        <Address>Chicago, Illinois, 60605</Address>
-        <Phone>1-312-922-4400</Phone>
+        <HotelIDContainer>
+          <HotelName>Hilton Chicago</HotelName>
+          <Address>720 South Michigan Avenue</Address>
+          <Address>Chicago, Illinois, 60605</Address>
+          <Phone>1-312-922-4400</Phone>
+        </HotelIDContainer>
         <LaunchMenu menu={menu} />
       </PageContainer>
       <Footer>Copyright</Footer>

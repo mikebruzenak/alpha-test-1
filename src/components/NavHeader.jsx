@@ -21,14 +21,18 @@ const Title = styled.h1`
 `
 
 const BackButton = styled.div`
-  margin 10px 0px 10px 20px;
-  height: 30px;
+  margin 20px 0px 10px 20px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  height: 40px;
   background-color: #2d2d2d; 
-  background-image: linear-gradient(#2f2f2f, #040404);
+  background-image: linear-gradient(#3e3e3e, #040404);
   color: white;
   width: 100px;
   font-size: 26px;
   font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #3e3e3e;
 `;
 
 const Logo = styled.img`
